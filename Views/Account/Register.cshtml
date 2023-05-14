@@ -1,0 +1,26 @@
+﻿@model NoteNote.Models.User
+<h2>회원가입</h2>
+
+<form class="form-horizon" method="post" asp-controller="Account" asp-action="Register">
+
+	<div class="form-group">
+		<label>사용자이름</label>
+		<input type="text" class="form-control" asp-for="UserName" placeholder="사용자 이름 입력" />
+	</div>
+	
+	<div class="form-group">
+		<label>사용자 ID</label>
+		<input type="text" class="form-control" asp-for="UserId" placeholder="사용자 ID" />
+	</div>
+
+	<div class="form-group">
+		<label>사용자 비밀번호</label>
+		<input type="text" class="form-control" asp-for="UserPassword" placeholder="사용자 비밀번호" />
+	</div>
+
+	
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">제출</button>
+		<a class="btn btn-warning" href="#">취소</a>
+	</div>
+</form>
